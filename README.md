@@ -63,3 +63,10 @@ npm install @types/passport-jwt --save-dev
 nest g module auth
 nest g service auth
 ```
+
+## Debug
+1. error
+
+<p align="center">
+  <img src="./ss/error-jwt-auth-strategy.png" alt="error-message" />
+</p>
