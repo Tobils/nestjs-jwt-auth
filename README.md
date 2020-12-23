@@ -6,7 +6,7 @@
 [travis-url]: https://travis-ci.org/nestjs/nest
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
-  
+
   <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -25,21 +25,26 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Deskripsi
+
 membuat authentication dengan jwt
 terdiri dari module
+
 1. auth
 2. users
 
 kedua modul tersebut akan dipanggil dan digunakan oleh app.controller dan app.service
+
 - access protected routes
 - access public routes
 
 setalah berhasil, dilanjutkan dengan akses dan validasi data user ke database dengan route :
+
 - register
 - login
 - akses protected route
 
 ## config & dependency
+
 ```bash
 # create prject
 nest new jwt_auth
@@ -53,7 +58,7 @@ nest g controller users --no-spec
 # create users service
 nest g service users --no-spec
 
-npm install dotenv @nestjs/passport passport passport-local 
+npm install dotenv @nestjs/passport passport passport-local
 npm install --save-dev @types/passport-local
 
 npm install @nestjs/jwt passport-jwt
@@ -64,7 +69,29 @@ nest g module auth
 nest g service auth
 ```
 
+## Testing
+
+- url : `127.0.0.1:3000/auth/login`
+- method: POST
+- body
+
+  ```json
+  {
+    "username": "john",
+    "password": "changeme"
+  }
+  ```
+
+- response
+
+  ```json
+  {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTYwODY4NjE3OSwiZXhwIjoxNjA4Njg2MjM5fQ.yAb9YRwU7nCGrbxSmnqQbsQ2NqRxgaPJN6O7dwIbQXE"
+  }
+  ```
+
 ## Debug
+
 1. error
 
 <p align="center">
