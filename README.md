@@ -89,11 +89,3 @@ nest g service auth
     "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTYwODY4NjE3OSwiZXhwIjoxNjA4Njg2MjM5fQ.yAb9YRwU7nCGrbxSmnqQbsQ2NqRxgaPJN6O7dwIbQXE"
   }
   ```
-
-## Debug
-
-1. error
-
-<p align="center">
-  <img src="./ss/error-jwt-auth-strategy.png" alt="error-message" />
-</p>
